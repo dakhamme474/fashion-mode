@@ -1,0 +1,428 @@
+.slide{
+width: 100%;
+height: 560px;
+background-image: url(../../../assets/images/style.jpg);
+background-size: cover;
+background-position: center;
+background-blend-mode: hue;
+background-color: rgba(0, 0, 0, 0.384);
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.modalx{
+    background-color: rgba(0, 0, 0, 0.916);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.hide{
+   display: none;
+}
+.close-modal{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.slide-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        border-bottom: 3px solid white;
+        color: white;
+        font-size: 56px;
+        padding: 6px 0;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+a{
+    padding: 8px 22px;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+a:hover{
+    background-color: $redpage;
+}
+}
+
+// ********************************section2***************************************************
+.section-2{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.banner{
+    width: 400px;
+    position: relative;
+    img{
+        width: 100%;
+        transition: 0.4s;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+    h1{
+        background-color: rgba(0, 0, 0, 0.735);
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 77%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 25px;
+        transition: 0.4s;
+        font-weight: 100;
+    }
+    h1:hover{
+        background-color: rgb(0, 0, 0);
+        
+    }
+}
+// ********************section3***************************************************
+.section-3{
+margin-top: 50px;
+}
+.our-product{
+    h1{
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+    }
+}
+.grand-menu{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+.les-menu{
+    color: gray;
+    font-size: 25px;
+}
+.les-menu:hover{
+    color: $redpage;
+    border-bottom: 2px solid $redpage;
+    border-radius: 0;
+}
+.item1{
+    width: 300px;
+    img{
+        width: 100%;
+    }
+}
+.info-product{
+    p{
+        margin: 0;
+        padding: 3px 0;
+        color: gray;
+        font-weight: 300;
+    }
+}
+.x4card{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+// *************************section 4 *****************************************************
+.section-4{
+    background-image: url(../../../assets/images/masterslide.jpg);
+    width: 100%;
+    height: 490px;
+    background-position: center;
+    background-size: cover;
+
+    background-blend-mode: hue;
+    background-color: rgba(0, 0, 0, 0.34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sous-bg{
+    h3{color: white;
+        font-size: 35px;
+        text-align: center;
+        font-weight: 600;
+    }
+    h1{
+        color: white;
+        font-size: 55px;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        color: white;
+        margin: 0;
+        padding-bottom: 5px;
+        
+    }
+    .play-icone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        cursor: pointer;
+        .play{
+        color: white;
+    }
+    }
+    
+}
+// !phone-------------------------------------
+
+@media (min-width : 375px) and (max-width : 426px) {
+    .slide{
+        width: 100%;
+        height:100vh;
+        background-image: url(../../../assets/images/style.jpg);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: hue;
+        background-color: rgba(0, 0, 0, 0.384);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+        .slide-info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h1{
+                border-bottom: 3px solid white;
+                color: white;
+                font-size: 50px;
+                padding: 10px ;
+                font-weight: bold;
+                margin-top: 30px;
+            }
+        a{
+            padding: 8px 22px;
+            border-radius: 25px;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+        }
+        // ************section2
+        .section-2{
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .banner{
+            width: 400px;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            h1{
+                background-color: rgba(0, 0, 0, 0.461);
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 25px;
+                transition: 0.4s;
+                font-weight: 100;
+            }
+            h1:hover{
+                background-color: rgb(0, 0, 0);
+            }
+        }
+        // ********************section3
+.section-3{
+    margin-top: 50px;
+    }
+    .our-product{
+        h1{
+            font-size: 30px;
+            font-weight: 800;
+            text-align: center;
+        }
+    }
+    .grand-menu{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+
+    
+    }
+    .les-menu{
+        color: gray;
+        font-size: 25px;
+    }
+    .les-menu:hover{
+        color: $redpage;
+        border-bottom: 2px solid $redpage;
+        border-radius: 0;
+    }
+    .item1{
+        width: 300px;
+        img{
+            width: 100%;
+        }
+    }
+    .info-product{
+        p{
+            margin: 0;
+            padding: 3px 0;
+            color: gray;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+    .x4card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+// !tablet -----------------------------------------
+
+@media (min-width : 767px) and (max-width : 1025px) {
+    .slide{
+        width: 100%;
+        height: 560px;
+        background-image: url(../../../assets/images/style.jpg);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: hue;
+        background-color: rgba(0, 0, 0, 0.384);
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+        .slide-info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h1{
+                border-bottom: 3px solid white;
+                color: white;
+                font-size: 56px;
+                padding: 6px 0;
+                font-weight: bold;
+                margin-top: 30px;
+            }
+        a{
+            padding: 8px 22px;
+            border-radius: 25px;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+        a:hover{
+            background-color: $redpage;
+        }
+        }
+        
+        // ********************************section2
+        .section-2{
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .banner{
+            width: 550px;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            h1{
+                background-color: rgba(0, 0, 0, 0.461);
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                position: absolute;
+                top: 85%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 25px;
+                transition: 0.4s;
+                font-weight: 100;
+            }
+            h1:hover{
+                background-color: rgb(0, 0, 0);
+            }
+        }
+        // ********************section3
+        .section-3{
+        margin-top: 50px;
+        }
+        .our-product{
+            h1{
+                font-size: 30px;
+                font-weight: 800;
+                text-align: center;
+            }
+        }
+        .grand-menu{
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        
+        }
+        .les-menu{
+            color: gray;
+            font-size: 25px;
+        }
+        .les-menu:hover{
+            color: $redpage;
+            border-bottom: 2px solid $redpage;
+            border-radius: 0;
+        }
+        .item1{
+            width: 450px;
+            img{
+                width: 100%;
+            }
+        }
+        .info-product{
+            p{
+                margin: 0;
+                padding: 3px 0;
+                color: gray;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+        .x4card{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+}

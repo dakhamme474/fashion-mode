@@ -1,0 +1,204 @@
+footer{
+    margin-top: 100px;
+}
+.fot-one{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+    h1{
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+    p{
+        width: 500px;
+        font-size: 14px;
+        font-weight: 200;
+        color: gray;
+        text-align: center;
+    }
+}
+.icone-footer{
+    display: flex;
+    gap: 20px;
+    font-size: 23px;
+    color: rgba(128, 128, 128, 0.831);
+    margin-top: 22px;
+    .icone-sous{
+        text-decoration: none;
+        color: rgba(128, 128, 128, 0.831);
+    }
+}
+.links{
+    h1{
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 22px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 200;
+        color: gray;
+        text-align: center;
+    }
+}
+.element-foot{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pay{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+.copyright{
+    color: rgba(128, 128, 128, 0.676);
+    font-weight: 200;
+    text-align: center;
+    padding: 13px 0 27px 0;
+}
+// !phone---------------------------------------
+
+@media (min-width : 375px) and (max-width : 426px) {
+    footer{
+        margin-top: 100px;
+    }
+    .fot-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+        h1{
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 22px;
+        }
+        p{
+            width: 100%;
+            font-size: 14px;
+            font-weight: 200;
+            color: gray;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    .icone-footer{
+        display: flex;
+        gap: 20px;
+        font-size: 23px;
+        color: rgba(128, 128, 128, 0.831);
+        margin-top: 22px;
+    }
+    .links{
+        h1{
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 14px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 200;
+            color: gray;
+            text-align: center;
+        }
+    }
+    .element-foot{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .pay{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+    }
+    .copyright{
+        color: rgba(128, 128, 128, 0.676);
+        font-weight: 200;
+        text-align: center;
+        padding: 13px 0 27px 0;
+    }
+}
+// !tablet ------------------------------------------------
+
+@media (min-width : 767px) and (max-width : 1025px) {
+    footer{
+        margin-top: 100px;
+    }
+    .fot-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+        h1{
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 22px;
+        }
+        p{
+            width: 100%;
+            font-size: 14px;
+            font-weight: 200;
+            color: gray;
+            text-align: center;
+            padding: 0 20px;
+        }
+    }
+    .icone-footer{
+        display: flex;
+        gap: 20px;
+        font-size: 23px;
+        color: rgba(128, 128, 128, 0.831);
+        margin-top: 22px;
+    }
+    .links{
+        h1{
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 14px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 200;
+            color: gray;
+            text-align: center;
+        }
+    }
+    .element-foot{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .pay{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+    }
+    .copyright{
+        color: rgba(128, 128, 128, 0.676);
+        font-weight: 200;
+        text-align: center;
+        padding: 13px 0 27px 0;
+    }
+}
