@@ -45,7 +45,7 @@ export const Coeur = () => {
                 <div className="all-card-product">
                     <div className="produit">
                         <div className="pic-item"><img src={items1} alt="" />
-                            <p className="text-gray">Jacket Jean Blue Women</p></div>
+                            <p className="text-gray">Jacket  Blue </p></div>
                         <div className="price-quanty"><p className="text-gray">$19.00</p>
                             <div className="quantity"><button onClick={xmince}>-</button> <p>{count}</p> <button onClick={xadd}>+</button></div>
 
@@ -57,7 +57,7 @@ export const Coeur = () => {
                     </div>
                     <div className="produit">
                         <div className="pic-item"><img src={items2} alt="" />
-                            <p className="text-gray">Cartable Noir Avec Ceinture</p></div>
+                            <p className="text-gray">Cartable Noir </p></div>
                         <div className="price-quanty"><p className="text-gray">$19.00</p>
                             <div className="quantity"><button onClick={xmince1}>-</button> <p>{count1}</p> <button onClick={xadd1}>+</button></div>
 
@@ -69,7 +69,7 @@ export const Coeur = () => {
                     </div>
                     <div className="produit">
                         <div className="pic-item"><img src={items3} alt="" />
-                            <p className="text-gray">Jean Blue Women collection</p></div>
+                            <p className="text-gray">Jean Blue </p></div>
                         <div className="price-quanty"><p className="text-gray">$19.00</p>
                             <div className="quantity"><button  onClick={xmince2}>-</button> <p>{count2}</p> <button onClick={xadd2}>+</button></div>
 

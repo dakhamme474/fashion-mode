@@ -3,6 +3,10 @@
     margin-top: 100px;
 
 }
+.all-card-product{
+    margin-top: 20px;
+    padding: 0 12px;
+}
 .heading-page{
     background-image: url(../../../assets/images/headingpages.jpg);
     width: 100%;
@@ -14,10 +18,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     h1{
         color: white;
         font-size: 50px;
         font-weight: bold;
+    }
+    p{
+        color: white;
+        font-weight: 300;
+        font-size: 22px;
     }
 }
 .font-product{
@@ -105,6 +115,10 @@ h1{
     .section-panier{
         margin-top: 100px;
     
+    }
+    .all-card-product{
+        margin-top: 40px;
+        padding: 0 12px;
     }
     .heading-page{
         background-image: url(../../../assets/images/headingpages.jpg);
@@ -211,6 +225,10 @@ h1{
     .section-panier{
         margin-top: 100px;
     
+    }
+    .all-card-product{
+        margin-top: 40px;
+        padding: 0 12px;
     }
     .heading-page{
         background-image: url(../../../assets/images/headingpages.jpg);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "../../assets/images/style.jpg";
 import banner1 from "../../assets/images/banner1.jpg";
 import banner2 from "../../assets/images/banner2.jpg";
@@ -9,12 +9,36 @@ import item3 from "../../assets/images/item3.jpg";
 import item4 from "../../assets/images/item4.jpg";
 import masterslide from "../../assets/images/masterslide.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesUp, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
 
 
 export const Home = () => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+  };
+
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [xplay, setxPlay] = useState(false)
   const openModal = () => {
     setxPlay(!xplay)
@@ -200,6 +224,11 @@ export const Home = () => {
       <p onClick={openModal} className="close-modal">x</p>
       <iframe width="853" height="480" src="https://www.youtube.com/embed/yhXZ2uWquvw" title="The Anix - &quot;This Machine&quot; T-Shirt (Preview)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
+
+{showScrollToTop && (
+
+        <FontAwesomeIcon icon={faAnglesUp} className="scroll-to-top" onClick={handleScrollToTop}/>
+      )}
 
     </>
   );
