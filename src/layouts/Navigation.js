@@ -5,7 +5,7 @@ import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
 export const Navigation = () => {
-    const [xburger , setXburger] = useState(false)
+    const [xburger , setXburger] = useState(true)
     const openBurger = () =>{
         setXburger(!xburger)
     }

@@ -5,9 +5,13 @@ import item2 from "../../assets/images/item2.jpg";
 import item3 from "../../assets/images/item3.jpg";
 import item4 from "../../assets/images/item4.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesUp, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 export const Product = () => {
+    const [xsucces , setXsucces] = useState(false)
+    const openSucces = () =>{
+        setXsucces(!xsucces)
+    }
     const handleScrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -61,6 +65,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                             <div className="car-product">
                                 <div className="img-to-product"><img src={item2} alt="" /></div>
@@ -68,6 +73,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                             <div className="car-product">
                                 <div className="img-to-product"><img src={item3} alt="" /></div>
@@ -75,6 +81,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                         </div>
                         <div className="categorie-row">
@@ -84,6 +91,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                             <div className="car-product">
                                 <div className="img-to-product"><img src={item1} alt="" /></div>
@@ -91,6 +99,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                             <div className="car-product">
                                 <div className="img-to-product"><img src={item2} alt="" /></div>
@@ -98,6 +107,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                         </div>
                         <div className="categorie-row">
@@ -107,6 +117,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                             <div className="car-product">
                                 <div className="img-to-product"><img src={item3} alt="" /></div>
@@ -114,6 +125,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                             <div className="car-product">
                                 <div className="img-to-product"><img src={item1} alt="" /></div>
@@ -121,6 +133,7 @@ export const Product = () => {
                                     <p>Denim Jacket Blue</p>
                                     <p>$92.50</p>
                                 </div>
+                                <div className="add-too" onClick={openSucces}><button>Add To Card</button></div>
                             </div>
                         </div>
 
@@ -131,6 +144,12 @@ export const Product = () => {
                     <FontAwesomeIcon icon={faAnglesUp} className="scroll-to-top" onClick={handleScrollToTop} />
                 )}
             </section>
+            <div className={xsucces ? "succes" : "xxhide"}>
+                <div className={"good-add"}><h1 onClick={openSucces}>x</h1>
+                <FontAwesomeIcon icon={faCircleCheck} className="circlecheck" shake/>
+                <h2>Votre produit a bien été Ajouté</h2>
+                </div>
+            </div>
         </>
     );
 };
